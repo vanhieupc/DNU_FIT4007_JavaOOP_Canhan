@@ -17,7 +17,6 @@ public class Bai32 {
         }
 
         boolean isLeapYear = false;
-        // Kiểm tra năm nhuận
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
             isLeapYear = true;
         }
@@ -34,7 +33,7 @@ public class Bai32 {
                 days = isLeapYear ? 29 : 28;
                 break;
             default:
-                days = 0; // Tháng không hợp lệ, trường hợp này đã kiểm tra trên rồi
+                days = 0;
         }
 
         System.out.println("Tháng " + month + " năm " + year + " có " + days + " ngày.");
